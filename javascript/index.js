@@ -54,6 +54,7 @@ getInstruction("mashedPotatoes", 0, (step1) => {
       })
     })
   })
+  document.querySelector("#mashedPotatoesImg").removeAttribute("hidden")
 })
 
 // Iteration 2 - using promises
@@ -94,6 +95,7 @@ obtainInstruction('steak', 0)
 
    .then( (step9) => {
     document.querySelector("#steak").innerHTML += `<li>${step9}</li>`})
+    document.querySelector("#steakImg").removeAttribute("hidden")
 
 // Iteration 3 using async/await
 // ...
